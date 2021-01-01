@@ -1,4 +1,4 @@
 #!/bin/sh -l
 #The entrypoint.sh script will be run in Docker, and it will define what the action is really going to be doing.
 
-sh -c "echo Hello world my name is $INPUT_MY__FIRST_NAME $INPUT_MY_LAST_NAME"
+sh -c "echo Hello world my name is $INPUT_MY__FIRST_NAME"
