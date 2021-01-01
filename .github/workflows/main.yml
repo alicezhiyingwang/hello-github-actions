@@ -24,6 +24,6 @@ jobs:
       - uses: ./action-a
         #provides the relative path to the action we created in the action-a directory of the repository
         with:
-          MY_FIRST_NAME: "Alice"
+          MY_NAME: "Alice"
         
         #used to specify the input variables that will be available to your action in the runtime environment. In this case, the input variable is MY_NAME, and it is currently initialized to "Mona".
