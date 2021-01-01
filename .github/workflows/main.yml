@@ -5,3 +5,15 @@ name: A workflow for my Hello World file
 # gives your workflow a name. This name appears on any pull request or in the Actions tab. The name is especially useful when there are multiple workflows in your repository.
 on: push
 #indicates that your workflow will execute anytime code is pushed to your repository, using the push event.
+
+#Workflows piece together jobs, and jobs piece together steps. We'll now create a job that runs an action. 
+#Add an action block to your workflow file
+jobs:
+  build:
+    name: Hello world action
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: ./action-a
+        with:
+          MY_NAME: "Mona"
