@@ -1,0 +1,19 @@
+#All actions require a metadata file that uses YAML syntax. The data in the metadata file defines the inputs, outputs and main entrypoint for your action.
+
+name: "Hello Actions"
+description: "Greet someone"
+author: "octocat@github.com"
+
+inputs:
+  MY_NAME:
+    description: "Who to greet"
+    required: true
+    default: "World"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+
+branding:
+  icon: "mic"
+  color: "purple"
